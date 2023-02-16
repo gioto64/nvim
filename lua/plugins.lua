@@ -62,4 +62,7 @@ return require('packer').startup(function(use)
   -- Floating Terminal
   use 'voldikss/vim-floaterm'
 
+  -- Linter
+  use 'mfussenegger/nvim-lint'
+
 end)
