@@ -12,7 +12,7 @@ vim.opt.expandtab = true
 
 require('plugins')
 require('mason-config')
-require('clangd')
+require('clangd-extensions')
 require('code-completion')
 require('file-tree')
 require('custom-maps')
@@ -24,3 +24,4 @@ require('blank-space')
 require('autopair')
 require('floating-terminal')
 require('linter')
+require('racket-langserver')

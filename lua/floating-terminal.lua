@@ -10,4 +10,3 @@ vim.g.floaterm_height=0.5
 vim.g.floaterm_wintitle=0
 vim.g.floaterm_autoclose=1
 
--- TODO: add compile/run options for each language I use

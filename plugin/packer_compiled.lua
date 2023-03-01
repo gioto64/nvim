@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["clangd_extensions.nvim"] = {
+    loaded = true,
+    path = "/home/gioto/.local/share/nvim/site/pack/packer/start/clangd_extensions.nvim",
+    url = "https://github.com/p00f/clangd_extensions.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/gioto/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -179,6 +184,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gioto/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tree-sitter-racket"] = {
+    loaded = true,
+    path = "/home/gioto/.local/share/nvim/site/pack/packer/start/tree-sitter-racket",
+    url = "https://github.com/6cdh/tree-sitter-racket"
   },
   ["vim-floaterm"] = {
     loaded = true,

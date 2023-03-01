@@ -65,4 +65,10 @@ return require('packer').startup(function(use)
   -- Linter
   use 'mfussenegger/nvim-lint'
 
+  -- Clangd_extensions
+  use 'p00f/clangd_extensions.nvim'
+
+  -- Racket syntax highlighting
+  use '6cdh/tree-sitter-racket'
+
 end)
