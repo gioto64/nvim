@@ -1,6 +1,6 @@
 -- file detection
 vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
-  pattern = {"*.racket"},
+  pattern = {"*.racket", "*.rkt"},
   command = "set filetype=racket", 
 })
 
@@ -23,5 +23,14 @@ vim.api.nvim_create_autocmd({"FileType"}, {
     map('n', '<F8>', [[:FloatermNew! --name=cppcompile --autoclose=0 g++ -std=c++17 -Wall -Wextra -Wshadow -Wunused -fsanitize=address,undefined,signed-integer-overflow -g % -o %< <CR>]], {})
     -- run and compile
     map('n', '<F9>', [[:FloatermNew --autoclose=0 g++ -std=c++17 -O3 % -o %< && ./%< <CR>]], {})
+  end
+})
+
+-- racket auto run code
+vim.api.nvim_create_autocmd({"FileType"}, {
+  pattern = {"racket"},
+  callback = function()
+    -- run
+    map('n', '<F9>', [[:FloatermNew --autoclose=0 racket % <CR>]], {})
   end
 })
