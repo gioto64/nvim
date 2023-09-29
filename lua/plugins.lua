@@ -40,8 +40,12 @@ return require('packer').startup(function(use)
   }
 
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.0',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    requires = { {'nvim-lua/plenary.nvim'}, {'BurntSushi/ripgrep'} }
+  }
+
+  use {
+    'BurntSushi/ripgrep',
   }
 
   -- Lualine information / Status bar
@@ -70,5 +74,8 @@ return require('packer').startup(function(use)
 
   -- Racket syntax highlighting
   use '6cdh/tree-sitter-racket'
+
+  -- Git blamer
+  use 'APZelos/blamer.nvim'
 
 end)

@@ -34,3 +34,11 @@ vim.api.nvim_create_autocmd({"FileType"}, {
     map('n', '<F9>', [[:FloatermNew --autoclose=0 racket % <CR>]], {})
   end
 })
+
+-- python auto run code
+vim.api.nvim_create_autocmd({"FileType"}, {
+  pattern = {"py", "python"},
+  callback = function()
+    map('n', '<F9>', [[:FloatermNew --autoclose=0 python % <CR>]], {})
+  end
+})
